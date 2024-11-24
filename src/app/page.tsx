@@ -1,10 +1,6 @@
 import Navbar from "@/components/navbar/navbar";
 import { FollowerPointerCard } from "@/components/ui/following-pointer";
 import Image from "next/image";
-import React, { useState, useEffect, useRef } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import Link from "next/link";
 import { portfolioData } from "@/data/portfolio-data";
 import { ProjectCard } from "@/components/ui/project-card";
 
