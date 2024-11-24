@@ -8,7 +8,10 @@ type Props = {};
 const Navbar = (props: Props) => {
   const navItems = [
     { label: "My projets", url: "/" },
-    { label: "LinkedIn", url: "/" },
+    {
+      label: "LinkedIn",
+      url: "https://www.linkedin.com/in/dusty-hordofel-bamana-08389310a/",
+    },
   ];
   return (
     <nav className="py-4 mb-10 flex justify-end ">
