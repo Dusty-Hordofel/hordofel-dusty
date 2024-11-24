@@ -7,13 +7,11 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   const navItems = [
-    { label: "Mes projets", url: "/" },
-    { label: "LinkedIn", url: "/about" },
-    // { label: "Services", url: "/services" },
-    // { label: "Contact", url: "/contact" },
+    { label: "My projets", url: "/" },
+    { label: "LinkedIn", url: "/" },
   ];
   return (
-    <nav className="py-4 px-20 mb-28 flex justify-end ">
+    <nav className="py-4 mb-10 flex justify-end ">
       <ul className="flex space-x-8">
         {navItems.map((item, index) => (
           <motion.li

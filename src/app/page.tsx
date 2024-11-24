@@ -4,39 +4,80 @@ import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Link from "next/link";
+import { portfolioData } from "@/data/portfolio-data";
+import { ProjectCard } from "@/components/ui/project-card";
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen ">
+    <div className="flex flex-col min-h-[100dvh] mx-auto  max-w-2xl  px-5 mb-20">
       <Navbar />
-      <div className="w-[80%] mx-auto">
-        <section>
-          <FollowerPointerCard className="ml-20 mb-10">
-            <div className="mt-8 text-lg flex items-center">
-              <h1 className="text-8xl font-bold flex flex-col">
+      <main>
+        <section id="hero">
+          <FollowerPointerCard className="mb-5">
+            <div>
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                 <span>BAMANA,</span>
                 <span>Dusty Hordofel.</span>
               </h1>
             </div>
           </FollowerPointerCard>
-        </section>
-        <section className="pl-80">
           <FollowerPointerCard
             greeting={false}
             title={
               <TitleComponent avatar="https://res.cloudinary.com/dgsc66scx/image/upload/v1724616852/dusty/mk1acm0sjy2i1jjjdhv2.jpg" />
             }
           >
-            <h2 className="text-5xl font-semibold text-balance leading-snug">
-              — un développeur Front-End passionné qui transforme les idées en
-              solutions numériques percutantes.
+            <h2 className="md:text-xl">
+              — a passionate junior developer who transforms ideas into digital
+              solutions.
             </h2>
           </FollowerPointerCard>
         </section>
-      </div>
-      {/* <section className="mt-40">
-        <img src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?q=80&w=2971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-      </section> */}
+        <section id="projects" className="my-10">
+          <h2 className="text-3xl font-bold mb-10">Projects</h2>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+            {portfolioData.projects.map((project, id) => (
+              <ProjectCard
+                href={project.href}
+                key={project.title}
+                title={project.title}
+                description={project.description}
+                dates={project.dates}
+                tags={project.technologies}
+                image={project.image}
+                video={project.video}
+                links={project.links}
+              />
+            ))}
+          </div>
+        </section>
+
+        <section id="upcoming-projects" className="my-10">
+          <h2 className="text-3xl font-bold mb-10">Upcoming Projects</h2>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+            {portfolioData.upcomingProjects.map((project) => (
+              <ProjectCard
+                href={project.href}
+                key={project.title}
+                title={project.title}
+                description={project.description}
+                dates={project.dates}
+                tags={project.technologies}
+                image={project.image}
+                video={project.video}
+                links={project.links}
+              />
+            ))}
+          </div>
+        </section>
+        <section id="components" className="my-10">
+          <h2 className="text-3xl font-bold">Components</h2>
+          <p className="mt-5 text-xl text-gray-500">
+            Available in a few weeks.
+          </p>
+        </section>
+      </main>
     </div>
   );
 }

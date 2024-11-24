@@ -60,8 +60,8 @@ export default function Home() {
             }
           >
             <h2 className="text-5xl font-semibold text-balance leading-snug">
-              — un développeur junior passionné qui transforme les idées en
-              solutions numériques percutantes.
+              — a passionate junior developer who transforms ideas into digital
+              solutions.
             </h2>
           </FollowerPointerCard>
         </section>
