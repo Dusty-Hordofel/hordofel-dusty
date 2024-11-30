@@ -8,9 +8,9 @@ import Footer from "@/components/footer/footer";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-[100dvh] mx-auto  max-w-2xl  px-5 mb-20">
+    <div className="flex flex-col min-h-[100dvh] mx-auto  max-w-2xl  px-5 mb-10 ">
       <Navbar />
-      <main>
+      <main className="mt-20">
         <section id="hero">
           <FollowerPointerCard className="mb-5">
             <div>
