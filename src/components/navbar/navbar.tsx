@@ -8,6 +8,7 @@ type Props = {};
 const Navbar = (props: Props) => {
   const navItems = [
     { label: "Read.cv", url: "https://read.cv/hordofel" },
+    { label: "Github", url: "https://github.com/Dusty-Hordofel" },
     {
       label: "LinkedIn",
       url: "https://www.linkedin.com/in/dusty-hordofel-bamana-08389310a/",
