@@ -3,7 +3,6 @@ import { FollowerPointerCard } from "@/components/ui/following-pointer";
 import Image from "next/image";
 import { portfolioData } from "@/data/portfolio-data";
 import { ProjectCard } from "@/components/ui/project-card";
-import Link from "next/link";
 import Footer from "@/components/footer/footer";
 
 export default function Home() {
