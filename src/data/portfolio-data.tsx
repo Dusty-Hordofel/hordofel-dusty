@@ -90,7 +90,7 @@ export const portfolioData = {
   ],
   projects: [
     {
-      title: "Nike-Clone",
+      title: "Nike-Clone Part1",
       href: "https://nike-clone-2024.vercel.app/",
       dates: "Oct 2024 - Nov 2024",
       active: true,
