@@ -4,6 +4,7 @@ import Image from "next/image";
 import { portfolioData } from "@/data/portfolio-data";
 import { ProjectCard } from "@/components/ui/project-card";
 import Footer from "@/components/footer/footer";
+import DemoComponent from "@/components/demo/demo-component";
 
 export default function Home() {
   return (
@@ -74,6 +75,11 @@ export default function Home() {
             Available in a few weeks.
           </p>
         </section>
+        {/* <DemoComponent
+          // key={componentName}
+          directory="forms/demo"
+          componentName="auth-register-form"
+        /> */}
       </main>
 
       <Footer />

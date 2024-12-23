@@ -186,8 +186,8 @@ export const portfolioData = {
   ],
   upcomingProjects: [
     {
-      title: "Nike-Clone",
-      href: "https://nike-clone-2024.vercel.app/",
+      title: "Nike-Clone Part2",
+      href: "#",
       dates: "Dec 2024 - Dec 2024",
       active: true,
       description:
