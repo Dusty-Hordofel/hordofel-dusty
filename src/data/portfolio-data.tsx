@@ -205,7 +205,7 @@ export const portfolioData = {
       video: "",
     },
     {
-      title: "HonosEducation",
+      title: "HonosEdu",
       href: "#",
       dates: "Junuary 2025 - March 2025",
       active: true,
